@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DiabetesRisk - Grupo 05</title>
+    
+    <!-- 1. FUENTES DE GOOGLE -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,0..200" rel="stylesheet"/>
+    
+    <!-- 2. ESTILOS PARA ICONOS -->
+    <style>
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      }
+      body { font-family: 'Inter', sans-serif; }
+    </style>
+
+    <!-- 3. TAILWIND CSS + TU CONFIGURACIÓN DE COLORES -->
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary": "#3A86FF",
+              "secondary": "#4CAF50",
+              "background-light": "#F4F7F9",
+              "background-dark": "#102216",
+              "text-light": "#212529",
+              "text-dark": "#F4F7F9",
+              "text-muted-light": "#6C757D",
+              "text-muted-dark": "#a0aec0",
+            },
+            fontFamily: {
+              "display": ["Inter", "sans-serif"]
+            },
+          },
+        },
+      }
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
