@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom"
 import Header from "./components/Header"
 import Footer from "./components/Footer"
+import PredictionButton from "./components/PredictionButton"
 
 // --- ICONOS SVG (Consistentes con tu Landing) ---
 const IconActivity = ({ className }) => (
@@ -196,12 +197,7 @@ function AboutModel() {
               <p className="text-lg text-muted-foreground max-w-2xl mx-auto mb-10 leading-relaxed">
                 Utilice nuestro predictor para obtener una evaluación instantánea basada en nuestro confiable modelo de Machine Learning.
               </p>
-              <Link to="/predict">
-                <button className="px-8 py-4 bg-red-600 hover:bg-red-700 text-white font-bold rounded-xl shadow-lg shadow-red-600/25 hover:shadow-red-600/40 hover:-translate-y-1 transition-all duration-200 flex items-center justify-center gap-2 mx-auto">
-                  <IconActivity className="w-5 h-5" />
-                  Probar el Predictor Ahora
-                </button>
-              </Link>
+              <PredictionButton className="mx-auto" />
             </div>
           </section>
         </main>

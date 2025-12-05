@@ -1,0 +1,15 @@
+# Ignorar archivos sensibles
+.env.production
+.env.local
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.db
+*.log
+venv/
+ENV/
+env/
+.vscode/
+.idea/

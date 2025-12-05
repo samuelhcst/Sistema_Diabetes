@@ -8,7 +8,7 @@ const Footer = () => {
               D
             </div>
             <p className="font-semibold text-foreground text-sm">
-              DiabetesRisk <span className="text-muted-foreground font-normal">| Grupo 05</span>
+              <span className="text-muted-foreground font-normal">Desarrollado por el Grupo 05</span>
             </p>
           </div>
           <p className="text-sm text-muted-foreground text-center md:text-right">
