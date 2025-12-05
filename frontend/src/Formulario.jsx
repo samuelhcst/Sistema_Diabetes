@@ -23,16 +23,18 @@ const IconScale = ({ className }) => (
 )
 
 function Formulario() {
-  const [datos, setDatos] = useState({
-    embarazos: 0,
-    glucosa: 100,
-    presion: 70,
-    piel: 20,
-    insulina: 0,
-    bmi: 25.0,
-    dpf: 0.5,
-    edad: 30
-  });
+  const valoresIniciales = {
+    embarazos: '',
+    glucosa: '',
+    presion: '',
+    piel: '',
+    insulina: '',
+    bmi: '',
+    dpf: '',
+    edad: ''
+  };
+
+  const [datos, setDatos] = useState(valoresIniciales);
 
   const [resultado, setResultado] = useState(null);
   const [loading, setLoading] = useState(false);
@@ -64,6 +66,7 @@ function Formulario() {
   const nuevaPrediccion = () => {
     setMostrarResultado(false);
     setResultado(null);
+    setDatos(valoresIniciales);
   };
 
   // Si hay resultado, mostrar página de resultados
