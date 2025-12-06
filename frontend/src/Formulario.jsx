@@ -115,12 +115,16 @@ function Formulario() {
               </div>
               <div className="p-6 grid grid-cols-1 md:grid-cols-3 gap-6">
                 <label className="flex flex-col gap-2">
-                  <span className="text-sm font-semibold text-foreground">Edad (años)</span>
+                  <span className="text-sm font-semibold text-foreground flex items-center gap-1">
+                    Edad (años)
+                    <span className="text-red-500">*</span>
+                  </span>
                   <input 
                     type="number" 
                     name="edad" 
                     value={datos.edad} 
                     onChange={handleChange}
+                    placeholder="Ej: 45 años"
                     className="px-4 py-3 bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100 border border-border rounded-lg focus:ring-2 focus:ring-primary focus:border-primary transition-all outline-none"
                     required 
                   />
@@ -132,6 +136,7 @@ function Formulario() {
                     name="embarazos" 
                     value={datos.embarazos} 
                     onChange={handleChange}
+                    placeholder="Ej: 2 gestaciones"
                     className="px-4 py-3 bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100 border border-border rounded-lg focus:ring-2 focus:ring-primary focus:border-primary transition-all outline-none"
                     min="0" 
                   />
@@ -144,8 +149,8 @@ function Formulario() {
                     name="dpf" 
                     value={datos.dpf} 
                     onChange={handleChange}
+                    placeholder="Ej: 0.45"
                     className="px-4 py-3 bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100 border border-border rounded-lg focus:ring-2 focus:ring-primary focus:border-primary transition-all outline-none"
-                    placeholder="Ej: 0.523" 
                   />
                   <span className="text-xs text-muted-foreground">Valor entre 0.0 y 2.5</span>
                 </label>
@@ -176,27 +181,30 @@ function Formulario() {
                     name="glucosa" 
                     value={datos.glucosa} 
                     onChange={handleChange}
+                    placeholder="Ej: 120 mg/dL"
                     className="px-4 py-3 bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100 border-2 border-red-200 dark:border-red-900 rounded-lg focus:ring-2 focus:ring-red-500 focus:border-red-500 transition-all outline-none"
                     required 
                   />
                 </label>
                 <label className="flex flex-col gap-2">
-                  <span className="text-sm font-semibold text-foreground">Insulina (mu U/ml)</span>
+                  <span className="text-sm font-semibold text-foreground">Insulina (µU/mL)</span>
                   <input 
                     type="number" 
                     name="insulina" 
                     value={datos.insulina} 
                     onChange={handleChange}
+                    placeholder="Ej: 94 µU/mL"
                     className="px-4 py-3 bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100 border border-border rounded-lg focus:ring-2 focus:ring-primary focus:border-primary transition-all outline-none"
                   />
                 </label>
                 <label className="flex flex-col gap-2">
-                  <span className="text-sm font-semibold text-foreground">Presión Arterial (mm Hg)</span>
+                  <span className="text-sm font-semibold text-foreground">Presión Arterial (mmHg)</span>
                   <input 
                     type="number" 
                     name="presion" 
                     value={datos.presion} 
                     onChange={handleChange}
+                    placeholder="Ej: 80 mmHg"
                     className="px-4 py-3 bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100 border border-border rounded-lg focus:ring-2 focus:ring-primary focus:border-primary transition-all outline-none"
                   />
                 </label>
@@ -228,6 +236,7 @@ function Formulario() {
                     name="bmi" 
                     value={datos.bmi} 
                     onChange={handleChange}
+                    placeholder="Ej: 28.5"
                     className="px-4 py-3 bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100 border border-border rounded-lg focus:ring-2 focus:ring-primary focus:border-primary transition-all outline-none"
                     required 
                   />
@@ -239,6 +248,7 @@ function Formulario() {
                     name="piel" 
                     value={datos.piel} 
                     onChange={handleChange}
+                    placeholder="Ej: 23 mm"
                     className="px-4 py-3 bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100 border border-border rounded-lg focus:ring-2 focus:ring-primary focus:border-primary transition-all outline-none"
                   />
                 </label>

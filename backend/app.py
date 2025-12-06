@@ -113,7 +113,7 @@ def dashboard_stats():
         "total": total,
         "altos": altos,
         "riesgo_promedio": round(avg_prob * 100, 1),
-        "precision_modelo": 82,
+        "precision_modelo": 74.03,
         "historial": historial
     })
 
